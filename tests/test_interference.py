@@ -77,7 +77,6 @@ def trained_model(post_period):
 
 
 def test_compile_inferences_w_data(data, pre_period, post_period, trained_model):
-
     df_pre = data.loc[pre_period[0] : pre_period[1], :]
     df_post = data.loc[post_period[0] : post_period[1], :]
 
@@ -204,7 +203,6 @@ def test_compile_inferences_w_data(data, pre_period, post_period, trained_model)
 def test_compile_inferences_w_post_period_response(
     data, pre_period, post_period, trained_model
 ):
-
     df_pre = data.loc[pre_period[0] : pre_period[1], :]
     df_post = data.loc[post_period[0] : post_period[1], :]
 

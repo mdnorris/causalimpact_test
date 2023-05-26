@@ -901,7 +901,6 @@ class TestPlot:
     # @patch('src.data')
     @staticmethod
     def test_plot(monkeypatch):
-
         params = {"alpha": 0.05, "post_period": [2, 4], "pre_period": [0, 1]}
         inferences_mock = mock.MagicMock()
 
