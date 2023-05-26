@@ -1,0 +1,10 @@
+name: binder
+dependencies:
+  - python
+  - compilers
+  - pandas
+  - numpy
+  - statsmodels
+  - matplotlib
+  - pymc
+  - pytensor
