@@ -1,5 +1,5 @@
 """
-    Setup file for causalimpact.
+    Setup file for src.
     Use setup.cfg to configure your project.
     This file was generated with PyScaffold 4.1.1.
     PyScaffold helps you to put up the scaffold of your new Python project.

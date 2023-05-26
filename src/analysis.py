@@ -3,9 +3,9 @@ import numpy as np
 import pandas as pd
 from pandas.api.types import is_list_like
 
-from causalimpact.misc import standardize_all_variables, df_print, get_matplotlib
-from causalimpact.model import construct_model, model_fit
-from causalimpact.inferences import compile_inferences
+from src.misc import standardize_all_variables, df_print, get_matplotlib
+from src.model import construct_model, model_fit
+from src.inferences import compile_inferences
 import scipy.stats as st
 
 

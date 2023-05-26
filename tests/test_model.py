@@ -7,13 +7,13 @@ import numpy as np
 from numpy.testing import assert_array_equal
 import pandas as pd
 
-import causalimpact
-from causalimpact.model import ModelResults
+import src
+from src.model import ModelResults
 from statsmodels.tsa.statespace.structural import UnobservedComponents
 
-observations_validate = causalimpact.model.observations_ill_conditioned
-construct_model = causalimpact.model.construct_model
-model_fit = causalimpact.model.model_fit
+observations_validate = src.model.observations_ill_conditioned
+construct_model = src.model.construct_model
+model_fit = src.model.model_fit
 
 
 def test_raises_when_y_is_None():

@@ -11,7 +11,7 @@ from numpy.testing import assert_array_equal
 import pandas as pd
 from pandas.testing import assert_frame_equal
 from statsmodels.tsa.statespace.structural import UnobservedComponents as UCM
-from causalimpact import CausalImpact
+from src import CausalImpact
 from unittest import TestCase
 
 
@@ -898,7 +898,7 @@ class TestSummary:
 
 
 class TestPlot:
-    # @patch('causalimpact.data')
+    # @patch('src.data')
     @staticmethod
     def test_plot(monkeypatch):
 
@@ -971,7 +971,7 @@ class TestPlot:
         np_zeros_mock.side_effect = lambda x: [0, 0]
 
         get_lib_mock = mock.Mock(return_value=plot_mock)
-        monkeypatch.setattr("causalimpact.analysis.get_matplotlib", get_lib_mock)
+        monkeypatch.setattr("src.analysis.get_matplotlib", get_lib_mock)
 
         monkeypatch.setattr("numpy.zeros", np_zeros_mock)
 

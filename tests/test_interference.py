@@ -7,12 +7,12 @@ import pandas as pd
 from pandas.testing import assert_series_equal
 from statsmodels.tsa.arima_process import ArmaProcess
 
-import causalimpact
+import src
 from unittest.mock import Mock
 
-from causalimpact.model import ModelResults
+from src.model import ModelResults
 
-compile_inferences = causalimpact.inferences.compile_inferences
+compile_inferences = src.inferences.compile_inferences
 np.random.seed(1)
 
 

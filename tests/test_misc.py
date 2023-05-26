@@ -8,12 +8,12 @@ from pandas.testing import assert_frame_equal
 from numpy.testing import assert_almost_equal
 import pytest
 
-import causalimpact
+import src
 
 
-standardize = causalimpact.misc.standardize_all_variables
-unstandardize = causalimpact.misc.unstandardize
-df_print = causalimpact.misc.df_print
+standardize = src.misc.standardize_all_variables
+unstandardize = src.misc.unstandardize
+df_print = src.misc.df_print
 
 
 def test_basic_standardize():
